@@ -41,7 +41,7 @@ func main() {
 	u.Timeout = 60
 
 	updates := bot.GetUpdatesChan(u)
-	api.Api()
+	//api.Api()
 	for update := range updates {
 		if update.Message == nil {
 			continue
